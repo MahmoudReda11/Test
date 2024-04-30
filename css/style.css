@@ -47,7 +47,7 @@ body {
 
 .div-btn .btn {
     background: linear-gradient(to left, #7f1316, #e41e26);
-    padding: 12px 65px 8px;
+    padding: 10px 65px 7px;
     font-size: 35px;
     font-weight: 600;
     color: #fff;
@@ -232,7 +232,9 @@ body {
     border-radius: 100%;
     top: -15px;
     right: -15px;
-    background: #fff;
+    background: url(../images/Layer24.png);
+    background-size: cover;
+    background-position: center;
 }
 .doctor .last_p{
     font-size: 4.5vw;
@@ -243,6 +245,47 @@ body {
     margin: auto;
 
 }
+
+
+/* start how_work */
+.how_work{
+    background: url(../images/Blue.png);
+    background-position: center;
+    background-size: cover;
+    padding: 25px 15px 20px;
+}
+.how_work .container{
+    position: relative;
+}
+.how_work .text{
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6vw;
+    text-align: center;
+    color: #053763;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -264,6 +307,7 @@ body {
     width: 95%;
     margin: auto;
     position: relative;
+    margin-bottom: 10px;
 }
 .last-sec .cont_Top{
     width: 95%;
@@ -343,7 +387,6 @@ body {
     width: 95%;
     margin: auto;
     position: relative;
-    top: -15px;
 }
 
 .last-sec .footer .boxs .box {
@@ -371,12 +414,15 @@ body {
     color: #fff;
  
 }
+.last-sec .footer .boxs .box:first-child div{
+    font-size: 2.2vw;
+}
 
 
 
 @media (max-width:390px) {
     .div-btn .btn {
-        padding: 12px 65px 8px;
+        padding: 10px 65px 7px;
         font-size: 28px;
     }
 }
@@ -387,7 +433,7 @@ body {
         padding: 15px 0 20px;
     }
     .div-btn .btn {
-        padding: 12px 65px 8px;
+        padding: 10px 60px 7px;
         font-size: 24px;
     }
     .last-sec .footer .boxs .box div {
