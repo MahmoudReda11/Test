@@ -47,8 +47,8 @@ body {
 
 .div-btn .btn {
     background: linear-gradient(to left, #7f1316, #e41e26);
-    padding: 10px 65px 7px;
-    font-size: 35px;
+    padding: 8px 65px 6px;
+    font-size: 32px;
     font-weight: 600;
     color: #fff;
     border-radius: 10px;
@@ -126,6 +126,7 @@ body {
     background: url(../images/Results.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 8px;
 }
 .result .top_res{
     text-align: center;
@@ -199,7 +200,6 @@ body {
     font-size: 6.2vw;
     font-weight: normal;
     color: #215288;
-    padding-top: 3px;
 }
 .doctor h2 span{
     font-weight: bold;
@@ -221,7 +221,7 @@ body {
     width: 47%;
     padding: 5px 10px;
     background:linear-gradient(-20deg, #000C27 ,#013B9C );
-    border-radius: 10px;
+    border-radius: 7px;
     margin-bottom: 15px;
     position: relative;
     color: #fff;
@@ -255,11 +255,11 @@ body {
     background: url(../images/Blue.png);
     background-position: center;
     background-size: cover;
-    padding: 25px 15px 20px;
+    padding: 25px 15px 30px;
 }
 .how_work .container{
     position: relative;
-    background: url(../images/Ho2w.jpg);
+    background: linear-gradient(#013a9c25, #013a9c25),url(../images/Ho2w.jpg);
     background-position: top center;
     background-size: cover;
 }
@@ -269,8 +269,14 @@ body {
     font-size: 6vw;
     text-align: center;
     color: #053763;
-    padding-top: 185px;
-    padding-bottom: 15px;
+    padding-top: 195px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:400px) {
+    .how_work .text{
+        padding-top: 180px;
+    }
 }
 
 
@@ -279,15 +285,18 @@ body {
 
 
 
-
-
-
+.last_sec{
+    background: url(../images/herobg.png);
+    background-size: cover;
+    background-position: top left;
+}
 
 
 .last_sec .price{
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
 }
 .last_sec .price img{
     width: 25%;
@@ -299,20 +308,22 @@ body {
 }
 .last_sec .price .text h1{
     font-size: 9vw;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 .last_sec .price .text h4{
     font-size: 9vw;
+    line-height: 0.8;
 }
 .last_sec .price .text h5{
     font-size: 30vw;
-    line-height: 0.8;
+    line-height: 1.1;
     background: linear-gradient(to left, #a71c12, #E41F26 ,#ff040c ,#ff040c) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-shadow: 2px 2px 15px #00000033;
     width: max-content;
     margin: auto;
+    padding: 5px 0;
 }
 
 .last_sec .price .text p{
@@ -320,6 +331,7 @@ body {
     position: relative;
     margin: auto;
     width: max-content;
+    line-height: 0.2;
 }
 .last_sec .price .text p::after{
     content: '';
@@ -371,10 +383,11 @@ body {
     text-align: center;
     background: #fff;
     padding: 5px 10px;
-    box-shadow: 5px 5px 8px #00000047;
+    box-shadow: -5px 2px 8px #036aa575;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    margin-top: 10px;
 }
 
 .last_sec .div-form .content p {
@@ -421,7 +434,6 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 9px 65px 6px;
 }
 
 .last_sec .footer .boxs {
@@ -469,7 +481,7 @@ body {
 
 @media (max-width:390px) {
     .div-btn .btn {
-        padding: 10px 65px 7px;
+        padding: 8px 60px 6px;
         font-size: 28px;
     }
 }
@@ -480,21 +492,15 @@ body {
         padding: 15px 0 20px;
     }
     .div-btn .btn {
-        padding: 10px 60px 7px;
-        font-size: 24px;
+        font-size: 26px;
     }
     .last_sec .footer .boxs .box div {
-        font-size: 3.1vw;
+        font-size: 2.8vw;
     }
 }
 
-@media (max-width:320px) {
 
-}
 
-@media (max-width:300px) {
- 
-}
 
 @media (min-width:500px) {
     .product-img {
