@@ -195,10 +195,11 @@ body {
 }
 .doctor h2{
     width: max-content;
-    margin: 5px auto 10px;
+    margin: 0px auto 10px;
     font-size: 6.2vw;
     font-weight: normal;
     color: #215288;
+    padding-top: 3px;
 }
 .doctor h2 span{
     font-weight: bold;
@@ -213,6 +214,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
 .doctor .boxs .box{
     width: 47%;
@@ -227,11 +230,11 @@ body {
 .doctor .boxs .box::after{
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     border-radius: 100%;
-    top: -15px;
-    right: -15px;
+    top: -12px;
+    right: -12px;
     background: url(../images/Layer24.png);
     background-size: cover;
     background-position: center;
@@ -256,17 +259,18 @@ body {
 }
 .how_work .container{
     position: relative;
+    background: url(../images/Ho2w.jpg);
+    background-position: top center;
+    background-size: cover;
 }
 .how_work .text{
     width: 100%;
-    position: absolute;
-    top: 180px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     font-size: 6vw;
     text-align: center;
     color: #053763;
-    
+    padding-top: 185px;
+    padding-bottom: 15px;
 }
 
 
@@ -280,20 +284,60 @@ body {
 
 
 
+.last_sec .price{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.last_sec .price img{
+    width: 25%;
+    margin-left: 5px;
+}
+.last_sec .price .text{
+    width: 70%;
+    text-align: center;
+}
+.last_sec .price .text h1{
+    font-size: 9vw;
+    line-height: 1.2;
+}
+.last_sec .price .text h4{
+    font-size: 9vw;
+}
+.last_sec .price .text h5{
+    font-size: 30vw;
+    line-height: 0.8;
+    background: linear-gradient(to left, #a71c12, #E41F26 ,#ff040c ,#ff040c) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 15px #00000033;
+    width: max-content;
+    margin: auto;
+}
+
+.last_sec .price .text p{
+    font-size: 6vw;
+    position: relative;
+    margin: auto;
+    width: max-content;
+}
+.last_sec .price .text p::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 192, 56);
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-.last-sec .sm-p {
+.last_sec .sm-p {
     font-size: 3.2vw;
     text-align: center;
     padding: 2px 1px;
@@ -303,13 +347,13 @@ body {
 }
 
 
-.last-sec .div-form {
+.last_sec .div-form {
     width: 95%;
     margin: auto;
     position: relative;
     margin-bottom: 10px;
 }
-.last-sec .cont_Top{
+.last_sec .cont_Top{
     width: 95%;
     margin: auto;
     padding: 4px 2px;
@@ -319,11 +363,11 @@ body {
     border-image: linear-gradient(to right, #7f1316, #e41e26) 1;
     margin-bottom: 7px;
 }
-.last-sec .cont_Top p{
+.last_sec .cont_Top p{
     margin-bottom: 0;
     line-height: 1.2;
 }
-.last-sec .div-form .content {
+.last_sec .div-form .content {
     text-align: center;
     background: #fff;
     padding: 5px 10px;
@@ -333,14 +377,14 @@ body {
     border-bottom-right-radius: 0;
 }
 
-.last-sec .div-form .content p {
+.last_sec .div-form .content p {
     font-size: 6vw;
     line-height: 1.2;
     color: #021F31;
 
 }
 
-.last-sec .div-form form {
+.last_sec .div-form form {
     background: url(../images/Form.png);
     background-position: center;
     background-size: cover;
@@ -352,35 +396,35 @@ body {
     text-align: center;
 }
 
-.last-sec .div-form form input {
+.last_sec .div-form form input {
     width: 100%;
     padding: 13px 10px;
     font-size: 18px;
     border-radius: 5px;
     box-shadow: 5px 5px 8px #00000031;
     outline: none;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     text-align: right;
     font-family: sans-serif;
     border: 1px solid transparent;
 }
 
-.last-sec .div-form form input:focus {
-    border: 1px solid #23a048;
+.last_sec .div-form form input:focus {
+    border: 1px solid #013B9C;
 }
 
-.last-sec form .div-btn {
+.last_sec form .div-btn {
     padding: 0;
 }
 
-.last-sec form .div-btn .btn {
+.last_sec form .div-btn .btn {
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: 30px;
+    padding: 9px 65px 6px;
 }
 
-.last-sec .footer .boxs {
+.last_sec .footer .boxs {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -389,7 +433,7 @@ body {
     position: relative;
 }
 
-.last-sec .footer .boxs .box {
+.last_sec .footer .boxs .box {
     display: flex;
     text-align: center;
     align-items: center;
@@ -402,21 +446,24 @@ body {
     gap: 5px;
 }
 
-.last-sec .footer .boxs .box img {
+.last_sec .footer .boxs .box img {
     width: 30px;
     height: 32px;
     margin-bottom: 5px;
 }
 
-.last-sec .footer .boxs .box div {
+.last_sec .footer .boxs .box div {
 
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     color: #fff;
  
 }
-.last-sec .footer .boxs .box:first-child div{
-    font-size: 2.2vw;
+.last_sec .footer .boxs .box:first-child div{
+    font-size: 2.1vw;
 }
+
+
+
 
 
 
@@ -436,7 +483,7 @@ body {
         padding: 10px 60px 7px;
         font-size: 24px;
     }
-    .last-sec .footer .boxs .box div {
+    .last_sec .footer .boxs .box div {
         font-size: 3.1vw;
     }
 }
@@ -473,28 +520,28 @@ body {
         max-width: 150px;
         top: 40px;
     }
-    .last-sec {
+    .last_sec {
         display: flex;
     }
-    .last-sec .flexonpc {
+    .last_sec .flexonpc {
         width: 50%;
     }
-    .last-sec .sm-p {
+    .last_sec .sm-p {
         font-size: 13px;
     }
-    .last-sec .div-form {
+    .last_sec .div-form {
         top: 0;
     }
-    .last-sec .div-form .content p {
+    .last_sec .div-form .content p {
         font-size: 22px;
     }
-    .last-sec .footer .boxs .box div {
+    .last_sec .footer .boxs .box div {
         font-size: 15px;
     }
-    .last-sec .footer .boxs {
+    .last_sec .footer .boxs {
         top: 10px;
     }
-    .last-sec .price .text div {
+    .last_sec .price .text div {
         overflow: hidden;
     }
 }
