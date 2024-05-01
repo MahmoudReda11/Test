@@ -343,10 +343,10 @@ body {
 .last_sec .price .text h5{
     font-size: 33vw;
     line-height: 1.1;
-    background: linear-gradient(to left, #920f06, #fd1b23 ,#ff0008 ,#ff0008) ;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: linear-gradient(to left, #a80c11, #f0111d ,#ff0612);
     -webkit-background-clip: text;
-    text-shadow: 2px 2px 15px #00000033;
+    background-clip: text;
     width: max-content;
     margin: auto;
     padding: 5px 0;
