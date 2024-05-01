@@ -14,6 +14,10 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "GESSTwoM";
+    src: local("GESSTwoM"), url("../images/GESSTwoM.woff2");
+  }
   
 * {
     padding: 0;
@@ -55,11 +59,12 @@ body {
 
 .div-btn .btn {
     background: linear-gradient(to left, #7f1316, #e41e26);
-    padding: 8px 65px 6px;
+    padding: 10px 55px 8px;
     font-size: 32px;
     font-weight: 600;
     color: #fff;
     border-radius: 10px;
+    font-family: "GESSTwoM";
 }
 
 
@@ -338,7 +343,7 @@ body {
 .last_sec .price .text h5{
     font-size: 31vw;
     line-height: 1.1;
-    background: linear-gradient(to left, #a71c12, #E41F26 ,#ff040c ,#ff040c) ;
+    background: linear-gradient(to left, #d82316, #fd1b23 ,#ff040c ,#ff040c) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-shadow: 2px 2px 15px #00000033;
@@ -502,7 +507,7 @@ body {
 
 @media (max-width:390px) {
     .div-btn .btn {
-        padding: 8px 60px 6px;
+        padding: 10px 50px 8px;
         font-size: 28px;
     }
 }
