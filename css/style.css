@@ -341,9 +341,9 @@ body {
     line-height: 0.8;
 }
 .last_sec .price .text h5{
-    font-size: 31vw;
+    font-size: 33vw;
     line-height: 1.1;
-    background: linear-gradient(to left, #d82316, #fd1b23 ,#ff040c ,#ff040c) ;
+    background: linear-gradient(to left, #920f06, #fd1b23 ,#ff0008 ,#ff0008) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-shadow: 2px 2px 15px #00000033;
@@ -497,7 +497,7 @@ body {
  
 }
 .last_sec .footer .boxs .box:first-child div{
-    font-size: 2.1vw;
+    font-size: 2.5vw;
 }
 
 
