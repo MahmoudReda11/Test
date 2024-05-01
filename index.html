@@ -76,7 +76,7 @@
 
                     <div class="box">
                         <h5>زﻳﺎﺩﺓ ﺍﻻﻧﺘﺼﺎﺏ</h5>
-                        <h6>بنسبة 40% الي 60</h6>
+                        <h6>بنسبة 40% الي 60%</h6>
                     </div>
 
                     <div class="box">
@@ -101,7 +101,7 @@
 
                     <div class="box">
                         <h5>زﻳﺎﺩﺓ ﺍﻻﻧﺘﺼﺎﺏ</h5>
-                        <h6>بنسبة 70% الي 100</h6>
+                        <h6>بنسبة 70% الي 100%</h6>
                     </div>
 
                     <div class="box">
@@ -194,6 +194,7 @@
 
             <img src="images/product.png" alt="">
         </div>
+
         <div class="flexonpc">
             <div class="div-form">
 
@@ -201,12 +202,16 @@
                     <p>ﺍﻟﺸﺤﻦ ﻣﺠﺎﻧﻲ ﻟﺠﻤﻴﻊ ﺍﻟﻤﺤﺎﻓﻈﺎﺕ </p>
                     <p>ﺍﻟــﺪﻓـﻊ ﻋﻨــﺪ ﺍﺳﺘـــﻼﻡ ﺍﻟـﻤﻨﺘـﺞ </p>
                 </div>
+
                <p class="sm-p">ﺳﻴﺎﺳﻪ ﺍﻻﺳﺘﺮﺟﺎﻉ ﻓﻲ ﺣﺎﻟﻪ ﻋﺪﻡ ﺭﺿﺎﺋﻚ ﻋﻦ ﺍﻟﻨﺘﺎﺋﺞ ﺿﻤﺎﻥ ﺍﺳــﺘﺮﺟﺎﻉ ﺧﻼﻝ 14 ﻳﻮﻡ </p>
+
                 <div class="content">
                     <p>ﺳﺠـﻞ ﺑﻴﺎﻧﺎﺗﻚ ﺍﻵﻥ ﻭﺳـﻮﻑ ﻧﻘﻮﻡ ﺑﺎﻟﺘﻮﺍﺻﻞ</p>
                     <p>ﻣﻌﻜـﻢ ﺑﻜـﻞ ﺍﻟﺘﻔـﺎﺻﻴـﻞ ﻗﺒـﻞ ﺷﺤـﻦ ﺍﻟﻤﻨﺘـﺞ </p>
                 </div>
-                <form id="form" class="contactUs container-fluid text-center" method="POST" action="https://api.sheetmonkey.io/form/p8p7bDQSkSWqpC42Kupj7w">
+
+
+                <form id="form" class="contactUs container-fluid text-center" method="POST" action="https://api.sheetmonkey.io/form/i2QyoSV15YwLHpBGgTXUyh">
 
                     <div class="container" id="block4">
 
@@ -219,7 +224,8 @@
                         </div>
 
 
-                        <input type="hidden" name="CODE" value="m50">
+                        <input type="hidden" name="Product" value="SENATOR">
+                        <input type="hidden" name="Agent Code" value="m50">
                         <div id="error"></div>
 
 
@@ -273,19 +279,21 @@
 
 
     <script>
-        const name = document.getElementById('text')
-        const password = document.getElementById('password')
+
+        const Mobile_Number = document.getElementById('password')
         const form = document.getElementById('form')
         const errorElement = document.getElementById('error')
 
         form.addEventListener('submit', (e) => {
             let messages = []
+            var  Mobile_Number_Value = Mobile_Number.value;
+            var first_Three_NUM = Mobile_Number_Value.substring(0, 3);
 
-            if (password.value.length < 11) {
+            if (Mobile_Number.value.length < 11 || (first_Three_NUM !== "010" && first_Three_NUM !== "011" && first_Three_NUM !== "012"   && first_Three_NUM !== "015")) {
                 messages.push('رقم الهاتف غير صحيح !')
             }
 
-            if (password.value.length > 11) {
+            if (Mobile_Number.value.length > 11) {
                 messages.push('رقم الهاتف غير صحيح !')
             }
 
