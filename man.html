@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENATOR GEL</title>
+
+    <link rel="shortcut icon" href="images/product.png" type="image/x-icon">
+
+    <!-- File Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+        }
+
+        .last_sec{
+            width: 50%;
+            margin: auto;
+            background: #222;
+        }
+        .flexonpc{
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="last_sec" id="linkbtn">
+
+        <div class="flexonpc">
+            <div class="div-form">
+
+
+                <form id="form" class="contactUs container-fluid text-center" method="POST" action="https://api.sheetmonkey.io/form/i2QyoSV15YwLHpBGgTXUyh">
+
+                    <div class="container" id="block4">
+
+                        <div class="f-element">
+                            <input type="text" class="form-control custom-field" name="Name" id="text" placeholder="الأسم" required>
+                        </div>
+
+                        <div class="f-element">
+                            <input class="form-control custom-field" name="Number" id="password" type="tel" maxlength="11" data-label="Phone" placeholder="رقم الهاتف" required>
+                        </div>
+
+
+                        <input type="hidden" name="Product" value="SENATOR">
+                        <input type="hidden" name="Agent Code" value="m50">
+
+                        
+  <input type="hidden" id="hiddenDate" name="hiddenDate">
+  <input type="hidden" id="userID" name="userID">
+
+  <!-- حقل الإدخال المخفي للوقت -->
+  <input type="hidden" id="hiddenTime" name="hiddenTime">
+
+                        <div id="error"></div>
+
+
+                        <input id="redDir" type="hidden" name="x-sheetmonkey-redirect" value="./thanksPage.html" />
+                        <div class="div-btn">
+
+                            <button id="btnSubmit" class="btn btn-block send-data" type="submit">
+                                ﺍﻃﻠﺐ ﺍﻻﻥ 
+                </button>
+
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    
+
+    <script>
+        function generateUniqueKey() {
+          var currentDate = new Date();
+          var year = (currentDate.getFullYear() % 100).toString().padStart(2, '0');
+          var month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+          var day = currentDate.getDate().toString().padStart(2, '0');
+          var hours = currentDate.getHours().toString().padStart(2, '0');
+          var minutes = currentDate.getMinutes().toString().padStart(2, '0');
+          var seconds = currentDate.getSeconds().toString().padStart(2, '0');
+          var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789- ";
+          var keyLength = 30;
+          var key = "";
+          for (var i = 0; i < keyLength; i++) {
+            var randomIndex = Math.floor(Math.random() * characters.length);
+            key += characters.charAt(randomIndex);
+          }
+          return "KEY" + year + "_" + month + "_" + day + hours + minutes + seconds + "_" + key;
+        }
+        
+        // تعيين القيمة المولدة لحقل الإدخال المخفي
+        var userIDField = document.getElementById("userID");
+        userIDField.value = generateUniqueKey();
+        </script>
+        
+
+
+    
+<script>
+    // الحصول على التاريخ الحالي
+    var currentDate = new Date();
+    
+    // تحديث قيمة حقل الإدخال المخفي للتاريخ بقيمة التاريخ الحالي
+    var hiddenDateField = document.getElementById("hiddenDate");
+    hiddenDateField.value = currentDate.toISOString().split('T')[0]; // تحويل التاريخ إلى صيغة يمكن قراءتها
+    
+    // تحديث قيمة حقل الإدخال المخفي للوقت بقيمة الوقت الحالي
+    var hiddenTimeField = document.getElementById("hiddenTime");
+    var currentTime = currentDate.getHours() + ":" + currentDate.getMinutes();
+    hiddenTimeField.value = currentTime;
+    </script>
+    
+    </body>
+
+
+
+    <script>
+
+        const Mobile_Number = document.getElementById('password')
+        const form = document.getElementById('form')
+        const errorElement = document.getElementById('error')
+
+        form.addEventListener('submit', (e) => {
+            let messages = []
+            var  Mobile_Number_Value = Mobile_Number.value;
+            var first_Three_NUM = Mobile_Number_Value.substring(0, 3);
+
+            if (Mobile_Number.value.length < 11 || (first_Three_NUM !== "010" && first_Three_NUM !== "011" && first_Three_NUM !== "012"   && first_Three_NUM !== "015")) {
+                messages.push('رقم الهاتف غير صحيح !')
+            }
+
+            if (Mobile_Number.value.length > 11) {
+                messages.push('رقم الهاتف غير صحيح !')
+            }
+
+            if (messages.length > 0) {
+                e.preventDefault()
+                errorElement.innerText = messages.join(', ')
+            }
+        })
+    </script>
+    <!-- js -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
